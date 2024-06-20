@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
     const navigate = useNavigate();
     const navigateHandler = () => {
-        navigate('/products')
+        navigate('products')
     }
     return <>
     <h1>My Home page</h1>

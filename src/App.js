@@ -3,6 +3,7 @@ import HomePage from "./pages/Home";
 import ProductPage from "./pages/Products";
 import RootLayout from './pages/Root';
 import Error from './pages/Error';
+import ProductsDetails from "./pages/ProductsDetails";
 
 
 // import {Route,createRoutesFromElements } from 'react-router-dom';
@@ -26,7 +27,9 @@ const router = createBrowserRouter([
       {
         path:'/products',element:<ProductPage/>
       },
-    
+      {
+        path:'/products/:id',element:<ProductsDetails/>
+      },
     ]
   },
 ])
